@@ -26,9 +26,16 @@ namespace WikiVerde.Controllers
         [HttpPost]
         public IActionResult Edit(Planta entity)
         {
-            MongoDbContext dbContext = new MongoDbContext();
-            dbContext.Plantas.ReplaceOne(m => m.Id == entity.Id, entity);
-            return View(entity);
+            if (ModelState.IsValid)
+            {
+                MongoDbContext dbContext = new MongoDbContext();
+                dbContext.Plantas.ReplaceOne(m => m.Id == entity.Id, entity);
+                return RedirectToAction("Index", "Plantas");
+            }
+            else
+            {
+                return View(entity);
+            }
         }
         [HttpGet]
         public IActionResult Add()
@@ -38,10 +45,18 @@ namespace WikiVerde.Controllers
         [HttpPost]
         public IActionResult Add(Planta entity)
         {
-            MongoDbContext dbContext = new MongoDbContext();
-            entity.Id = Guid.NewGuid();
-            dbContext.Plantas.InsertOne(entity);
-            return RedirectToAction("Index", "Plantas");
+            if (ModelState.IsValid)
+            {
+                MongoDbContext dbContext = new MongoDbContext();
+                entity.Id = Guid.NewGuid();
+                dbContext.Plantas.InsertOne(entity);
+                return RedirectToAction("Index", "Plantas");
+            }
+            else
+            {
+                return View(entity);
+            }
+            
         }
         [HttpGet]
         public IActionResult Delete(Guid id)
