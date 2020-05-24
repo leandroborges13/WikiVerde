@@ -12,6 +12,13 @@
     </div>
 
     <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.NomePopular)</span>
+        </div>
+        <input type="text" asp-for="NomePopular" class="form-control" placeholder="@Html.DisplayNameFor(model => model.NomePopular)" aria-label="@Html.DisplayNameFor(model => model.NomePopular)" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
         <div class="input-group">
             <div class="input-group-prepend">
                 <span class="input-group-text">@Html.LabelFor(model => model.DscEspecie)</span>
@@ -27,9 +34,66 @@
             <textarea asp-for="DscManejo" class="form-control" aria-label="With textarea"></textarea>
         </div>
     </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.IsPendente)</span>
+        </div>
+        <input type="checkbox" asp-for="IsPendente" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.IsPerene)</span>
+        </div>
+        <input type="checkbox" asp-for="IsPerene" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.IsSolPleno)</span>
+        </div>
+        <input type="checkbox" asp-for="IsSolPleno" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.IsMeiaSombra)</span>
+        </div>
+        <input type="checkbox" asp-for="IsMeiaSombra" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@Html.LabelFor(model => model.LinksReferencias)</span>
+            </div>
+            <textarea asp-for="LinksReferencias" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@Html.LabelFor(model => model.DscMuda)</span>
+            </div>
+            <textarea asp-for="DscMuda" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">@Html.DisplayNameFor(model => model.Price) R$</span>
+        </div>
+        <input type="text" asp-for="Price" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+
     <div class="form-input-group mb-3">
         <div class="input-group">
-            <input type="submit" value="Incluir" class="btn btn-success" />
+            <input type="submit" value="Adicionar Planta" class="btn btn-success" />
         </div>
     </div>
 
