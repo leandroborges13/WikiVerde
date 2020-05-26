@@ -13,11 +13,6 @@ namespace WikiVerde.Models
         [DefaultValue(false)]
         [Display(Name = "Pendente")]
         public bool IsPendente { get; set; }
-         public string Regiao { get; set; }
-         public double MaxPeso { get; set; }
-         public double MaxAltura { get; set; }
-         public double MinPeso { get; set; }
-         public double MinAltura { get; set; }
         [Display(Name = "Média de preço")]
         public double Price { get; set; }
         [DefaultValue(false)]
@@ -37,7 +32,8 @@ namespace WikiVerde.Models
         public string DscManejo { get; set; }
         [Display(Name = "Como produzir mudas")]
         public string DscMuda { get; set; }
-        public string PastaFotos { get; set; }
+        [Display(Name = "Fotos")]
+        public string ImagesPath { get; set; }
         public string LinksReferencias { get; set; }
         [DefaultValue(false)]
         [Display(Name = "Meia sombra")]
