@@ -20,8 +20,15 @@ namespace WikeVerde.Controllers
 
         public IActionResult Index()
         {
+            
+            return RedirectToAction("Login", "Login");
+        }
+
+        public IActionResult Home()
+        {
             return View();
         }
+
 
         public IActionResult Privacy()
         {

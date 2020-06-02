@@ -8239,19 +8239,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leandro.borges\\.nuget\\packages\\": {}
+    "C:\\Users\\leand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leandro.borges\\source\\repos\\wikiVerde\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
+      "projectUniqueName": "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
       "projectName": "WikiVerde",
-      "projectPath": "C:\\Users\\leandro.borges\\source\\repos\\wikiVerde\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
-      "packagesPath": "C:\\Users\\leandro.borges\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leandro.borges\\source\\repos\\wikiVerde\\WikiVerde\\WikiVerde\\obj\\",
+      "projectPath": "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
+      "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\leandro.borges\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
