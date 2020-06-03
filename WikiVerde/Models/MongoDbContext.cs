@@ -38,6 +38,14 @@ namespace WikiVerde.Models
                 return _database.GetCollection<Planta>("Plantas");
             }
         }
+
+        public IMongoCollection<Login> Logins
+        {
+            get
+            {
+                return _database.GetCollection<Login>("Logins");
+            }
+        }
     }
 }
 

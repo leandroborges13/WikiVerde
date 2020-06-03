@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WikiVerde.Models
 {
-    public class Login
+    public class Login : Usuario
     {
         [Required(ErrorMessage = "O campo E-mail é obrigatório.")]
         [Display(Name = "Email")]
@@ -16,6 +16,7 @@ namespace WikiVerde.Models
         [Display(Name = "Senha")]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime DateAcess { get; set; }
+        public DateTime CreateDate { get; set; }
     }
 }

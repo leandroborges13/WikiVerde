@@ -408,3 +408,4 @@ C:\Users\leand\Source\Repos\WikiVerde\WikiVerde\obj\Debug\netcoreapp3.1\WikiVerd
 C:\Users\leand\Source\Repos\WikiVerde\WikiVerde\bin\Debug\netcoreapp3.1\wwwroot\images\bg-01.jpg
 C:\Users\leand\source\repos\WikiVerde\WikiVerde\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
 C:\Users\leand\source\repos\WikiVerde\WikiVerde\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
+C:\Users\leand\source\repos\WikiVerde\WikiVerde\obj\Debug\netcoreapp3.1\Razor\Views\Login\Add.cshtml.g.cs
