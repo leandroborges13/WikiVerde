@@ -8,7 +8,7 @@ namespace WikiVerde.Models
 {
     public class Login : Usuario
     {
-        [Required(ErrorMessage = "O campo E-mail é obrigatório.")]
+        [Required(ErrorMessage = "O campo Email é obrigatório.")]
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
@@ -16,7 +16,7 @@ namespace WikiVerde.Models
         [Display(Name = "Senha")]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
-        public DateTime DateAcess { get; set; }
+        public DateTime DataAcesso { get; set; }
         public DateTime CreateDate { get; set; }
     }
 }

@@ -25,8 +25,10 @@ namespace WikiVerde.Models
         [Display(Name = "Nome popular")]
         public string NomePopular { get; set; }
         [Display(Name = "Descrição da Espécie")]
+        [Required(ErrorMessage = "O campo Descrição da Espécie é obrigatório.")]
         [DataType(DataType.MultilineText)]
         public string DscEspecie { get; set; }
+        [Required(ErrorMessage = "O campo Descrição do manejo é obrigatório.")]
         [DataType(DataType.MultilineText)]
         [Display(Name = "Descrição do manejo")]
         public string DscManejo { get; set; }

@@ -27,6 +27,10 @@ namespace WikeVerde
             MongoDbContext.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
             MongoDbContext.DatabaseName = Configuration.GetSection("MongoConnection:Database").Value;
             MongoDbContext.IsSSL = Convert.ToBoolean(this.Configuration.GetSection("MongoConnection:IsSSL").Value);
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(5);   
+            });
             services.AddMvc();
 
         }
@@ -46,7 +50,7 @@ namespace WikeVerde
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

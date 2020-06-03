@@ -40,8 +40,8 @@
                         <span class="focus-input100"></span>
                         @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
                     </div>
-                    <div class="text-danger text-center">
-                        @Html.ValidationSummary(true)
+                    <div>
+                        @Html.ValidationSummary(true,"", new {@class = "alert alert-danger alert-dismissible fade show" })
                     </div>
                     <div class="container-login100-form-btn">
                         <button type="submit" class="login100-form-btn">

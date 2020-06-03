@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leand\\source\\repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj": {}
+    "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leand\\source\\repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj": {
+    "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
         "projectName": "WikiVerde",
-        "projectPath": "C:\\Users\\leand\\source\\repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
+        "projectPath": "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\WikiVerde.csproj",
         "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leand\\source\\repos\\WikiVerde\\WikiVerde\\obj\\",
+        "outputPath": "C:\\Users\\leand\\Source\\Repos\\WikiVerde\\WikiVerde\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.4, )"

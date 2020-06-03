@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using WikiVerde.Models;
@@ -23,10 +24,15 @@ namespace WikiVerde.Controllers
         {
                 MongoDbContext dbContext = new MongoDbContext();
                 var usuario = dbContext.Logins.Find(m => m.Email == login.Email && m.Senha == login.Senha).FirstOrDefault();
+                
 
                 if (usuario != null)
                 {
-                    return RedirectToAction("Home", "Home");
+                    usuario.DataAcesso = DateTime.Now;
+                    dbContext.Logins.ReplaceOne(m => m.Email == login.Email && m.Senha == login.Senha, usuario);
+                    HttpContext.Session.SetString("SessionName", usuario.Name);
+
+                return RedirectToAction("Home", "Home");
                 }
                 else{
                     TempData["retornoAutenticar"] = "Email e ou Senha inválidos";

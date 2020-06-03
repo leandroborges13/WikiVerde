@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WikeVerde.Models;
@@ -26,9 +27,15 @@ namespace WikeVerde.Controllers
 
         public IActionResult Home()
         {
+            ViewBag.Name = HttpContext.Session.GetString("SessionName");
             return View();
         }
 
+        public IActionResult Sair()
+        {
+            HttpContext.Session.Remove("SessionName");
+            return RedirectToAction("Login", "Login");
+        }
 
         public IActionResult Privacy()
         {

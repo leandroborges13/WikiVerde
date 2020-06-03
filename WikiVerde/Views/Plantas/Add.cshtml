@@ -9,6 +9,7 @@
             <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.NomeCientifico)</span>
         </div>
         <input type="text" asp-for="NomeCientifico" class="form-control" placeholder="@Html.DisplayNameFor(model => model.NomeCientifico)" aria-label="@Html.DisplayNameFor(model => model.NomeCientifico)" aria-describedby="basic-addon1">
+        @Html.ValidationMessageFor(model => model.NomeCientifico, "", new { @class = "text-danger" })
     </div>
 
     <div class="input-group mb-3">
@@ -16,6 +17,7 @@
             <span class="input-group-text" id="basic-addon1">@Html.DisplayNameFor(model => model.NomePopular)</span>
         </div>
         <input type="text" asp-for="NomePopular" class="form-control" placeholder="@Html.DisplayNameFor(model => model.NomePopular)" aria-label="@Html.DisplayNameFor(model => model.NomePopular)" aria-describedby="basic-addon1">
+        @Html.ValidationMessageFor(model => model.NomePopular, "", new { @class = "text-danger" })
     </div>
 
     <div class="input-group mb-3">
@@ -24,6 +26,7 @@
                 <span class="input-group-text">@Html.LabelFor(model => model.DscEspecie)</span>
             </div>
             <textarea asp-for="DscEspecie" class="form-control" aria-label="With textarea"></textarea>
+            @Html.ValidationMessageFor(model => model.DscEspecie, "", new { @class = "text-danger" })
         </div>
     </div>
     <div class="input-group mb-3">
@@ -32,6 +35,7 @@
                 <span class="input-group-text">@Html.LabelFor(model => model.DscManejo)</span>
             </div>
             <textarea asp-for="DscManejo" class="form-control" aria-label="With textarea"></textarea>
+            @Html.ValidationMessageFor(model => model.DscManejo, "", new { @class = "text-danger" })
         </div>
     </div>
 
@@ -69,6 +73,7 @@
                 <span class="input-group-text">@Html.LabelFor(model => model.LinksReferencias)</span>
             </div>
             <textarea asp-for="LinksReferencias" class="form-control" aria-label="With textarea"></textarea>
+            @Html.ValidationMessageFor(model => model.LinksReferencias, "", new { @class = "text-danger" })
         </div>
     </div>
 
@@ -78,6 +83,7 @@
                 <span class="input-group-text">@Html.LabelFor(model => model.DscMuda)</span>
             </div>
             <textarea asp-for="DscMuda" class="form-control" aria-label="With textarea"></textarea>
+            @Html.ValidationMessageFor(model => model.DscMuda, "", new { @class = "text-danger" })
         </div>
     </div>
 
@@ -89,6 +95,7 @@
         <div class="input-group-append">
             <span class="input-group-text">.00</span>
         </div>
+        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
